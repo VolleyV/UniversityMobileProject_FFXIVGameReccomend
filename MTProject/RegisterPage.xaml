@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0A0A0A">
+            <Image Source="FFXIVBig.png" BackgroundColor="White" />
+            <Label Text="Register" TextColor="White" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" TextDecorations="Underline"></Label>
+            <StackLayout Padding="10">
+                <Entry Placeholder="Email" PlaceholderColor="LightGray" Keyboard="Email" TextColor="white" x:Name="email"></Entry>
+                <Entry Placeholder="Username" Keyboard="Text" PlaceholderColor="LightGray" TextColor="white" x:Name="username"></Entry>
+                <Entry Placeholder="Password" PlaceholderColor="LightGray" TextColor="white" IsPassword="True" x:Name="pass"></Entry>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Button BackgroundColor="red" Text="cancel" CornerRadius="5" x:Name="cancelBtn"></Button>
+                    <Button BackgroundColor="Green" Text="submit" CornerRadius="5" x:Name="submitBtn"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

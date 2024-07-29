@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.MainPage"
+             Title="Home">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout BackgroundColor="#0A0A0A" Padding="5">
+                <Image Source="Wallpaper.jpg" BackgroundColor="White"></Image>
+                <StackLayout Padding="15">
+                    <Label Text="About" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White" TextDecorations="Underline"></Label>
+                    <Label Text="   Final Fantasy XIV is set in the fantasy region of Eorzea, five years after the devastating Seventh Umbral Calamity which ended the original version. In the Calamity, the elder primal Bahamut escaped from his prison, an ancient space station called Dalamud, unleashing an apocalypse across Eorzea." TextColor="White" FontSize="16" Style="{StaticResource LabelStyle}"></Label>
+                    <Button Text="Play now" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="130" x:Name="playBtn"></Button>
+                </StackLayout>
+                <StackLayout Padding="15">
+                    <Label Text="Expansion" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White" TextDecorations="Underline"></Label>
+                    <Label Text="   Final Fantasy XIV has received regular updates since release, including four major expansion packs: Heavensward (2015), Stormblood (2017), Shadowbringers (2019), and Endwalker (2021). A fifth expansion pack, Dawntrail, is to be released in summer 2024." TextColor="White" FontSize="16" Style="{StaticResource LabelStyle}"></Label>
+                    <Button Text="Learn more" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="150" x:Name="DLC_more"></Button>
+                </StackLayout>
+                <StackLayout Padding="15">
+                    <Label Text="Classes and jobs" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White" TextDecorations="Underline"></Label>
+                    <Label Text="   In FINAL FANTASY XIV, sufficient mastery of a class will open up the path to one or more related jobs and their respective actions. To learn more about job" TextColor="White" FontSize="16" Style="{StaticResource LabelStyle}"></Label>
+                    <Button Text="Learn more" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="150" HeightRequest="50" x:Name="class_more"></Button>
+                    <WebView Source="https://www.youtube.com/watch?v=YnJXockEr5M"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

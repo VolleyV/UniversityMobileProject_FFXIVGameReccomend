@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.HealerPage"
+             Title="Healer"
+             IconImageSource="HealerRole">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout Padding="10">
+                    <Image Source="WHM.jpg"/>
+                    <Label Text="White Mage" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   White magic, the arcane art of succor, was conceived eras past that the world might know comfort. Alas, man began perverting its powers for self-gain, and by his wickedness brought about the Sixth Umbral catastrophe. Although the art subsequently became forbidden, it is now in the midst of a revival at the hands of the Padjal, chosen of the elementals. Those who would walk the path of the white mage are healers without peer, possessed of the power to deliver comrades from the direst of afflictions—even the icy grip of death itself."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="SCH.jpg"/>
+                    <Label Text="Scholar" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   In an age long past, when mankind flourished under the radiance of arcane mastery, the island of Vylbrand was home to a city-state called Nym. Though the history of that age tells of countless wars waged with earth-shattering incantations, it was the brilliant strategic maneuvering of Nym's scholars that allowed their mundane army of mariners to throw back would-be conquerors time and again. These learned men and women defended the freedom of their tiny nation with their unique command over spell-weaving faeries, utilizing the creatures' magicks to heal the wounded and bolster the strength of their allies." Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="AST.jpg"/>
+                    <Label Text="Astrologian" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   Ever has man coveted knowledge, and none more so than that of his fate. Thus did he labor to master the skill of foresight—but initial efforts bore little fruit. That is, until he looked to the stars above, which foretell the coming seasons, and learned to read the heavens." Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Though this gift is known today as astrology, the people of Sharlayan saw fit to not only read the stars, but to write their movements as well. By attuning their aetherial energies to that of constellations, they learned to wield magicks with heretofore unseen properties." Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Thus was astromancy born—a new form of magick which grants its users power over fate. Employing a star globe and divining deck in their miraculous deeds, fortune always smiles upon these masters of arcana." Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="SGE.jpg"/>
+                    <Label Text="Sage" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   The nation of Sharlayan is the cradle of knowledge, and the Studium its foremost institution of learning. Yet more so than its incomparable library and formidable assemblage of Archons, this prestigious academy is famed for blending traditionally distinct fields to produce revolutionary new disciplines. Among these, perhaps the most distinguished is an altruistic art which draws upon the wisdom of aetherology, sorcery, and medicine. Dubbed somanoutics, the art seeks to heal and protect by manipulating corporeal aether through the use of nouliths, a flying array of foci. Practitioners are dedicated to the betterment of mankind, and for their wisdom and compassion, eventually came to be known simply as sages." Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

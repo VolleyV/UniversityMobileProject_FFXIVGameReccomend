@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.LoginPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0A0A0A">
+            <Image Source="FFXIVBig.png" BackgroundColor="White" />
+            <Label Text="Login" TextColor="White" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" TextDecorations="Underline"></Label>
+            <StackLayout Padding="10">
+                <Entry x:Name="username" Placeholder="Username" PlaceholderColor="LightGray" TextColor="white"></Entry>
+                <Entry x:Name="pass" Placeholder="Password" PlaceholderColor="LightGray" TextColor="white" IsPassword="True"></Entry>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Button BackgroundColor="red" Text="cancel" CornerRadius="5" x:Name="cancelBtn"></Button>
+                    <Button BackgroundColor="Green" Text="submit" CornerRadius="5" x:Name="submitBtn"></Button>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label Text="Don't have account?" TextColor="White" HorizontalOptions="Center" FontSize="15" TextDecorations="Underline"></Label>
+            </StackLayout>
+            <StackLayout Padding="10" Orientation="Horizontal">
+                <Button BackgroundColor="Red" CornerRadius="5" x:Name="registerBtn" HorizontalOptions="FillAndExpand" Text="Register" FontSize="18"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

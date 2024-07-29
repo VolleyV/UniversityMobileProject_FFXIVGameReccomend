@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.StormbloodPage"
+             Title="Stormblood">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout>
+                    <Image Source="StormbloodWallpaper.jpg"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Button Text="Watch Trailer" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="180" x:Name="trailerBtn"></Button>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Label Text="Stormblood" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   The story moves from Ishgard to both Ala Mhigo and Doma for this expansion. The Scions join the Ala Mhigan resistance efforts and strive to fight against Zenos yae Galvus, the Garlean emperor's son. The Warrior of Light travels with local Doman friends named Gosetsu and Yugiri to find the missing prince of Doma, Hien, and help him retake his lands. Hien is found, and the team unites the people of Doma to fight back against the Garlean Empire. They succeed in their revolution, with Hien at the helm of Doma's leadership and he joins the Scions in their efforts to liberate Ala Mhigo."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Zenos, through Garlean experimentation, gets his own artificially made Echo but still falls in a final battle against the Warrior of Light. This liberates Ala Mhigo and the powers begin to focus on the restoration of their homelands. However, it is eventually discovered that Zenos is still somehow alive. Not only is Zenos still out there, but the creator of the Ultima Weapon, Gaius, is also alive and seeking vengeance on the Ascians who betrayed him. During a meeting to discuss the possibility of Ascian manipulations, half of the Scions are afflicted with a psychic calling that leaves them comatose."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Gaius reveals to the Warrior of Light that Ascians have three leaders: Elidibus who now acts through Zenos body, Lahabrea, and one that has not revealed himself yet. The Empire is also working on an incredibly potent chemical weapon called Black Rose. The leaders of Eorzea decide to meet with the current Garlean Emperor, Varis, to discuss peace. To the shock of all, Varis explains that the Garlean Empire was founded by Ascians and that peace is not an option. More Scions fall to the mysterious coma, and the Warrior of Light hears a psychic message that they are needed and to seek out a certain beacon at the Crystal Tower."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

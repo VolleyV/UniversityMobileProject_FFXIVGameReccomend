@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.ExpansionPage"
+             Title="Expansion">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0A0A0A">
+            <StackLayout Padding="20">
+                <Label Text="Choose your adventure" FontSize="30" TextColor="White" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Padding="10">
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Button ImageSource="ARRLogo.png" x:Name="ARR"/>
+                        <Button ImageSource="HeavenswardLogo.png" x:Name="Heavensward"/>
+                        <Button ImageSource="StormbloodLogo.png" x:Name="Stormblood"/>
+                        <Button ImageSource="ShadowbringerLogo.png" x:Name="Shadowbringer"/>
+                        <Button ImageSource="EndwalkerLogo.png" x:Name="Endwalker"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

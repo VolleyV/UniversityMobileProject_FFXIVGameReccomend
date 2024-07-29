@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.HeavenswardPage"
+             Title="Heavensward">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout>
+                    <Image Source="HeavenswardWallpaper.jpg"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Button Text="Watch Trailer" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="180" x:Name="trailerBtn"></Button>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Label Text="Heavensward" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   The Warrior of Light is taken in by Count Fortemps and assists his sons on missions. It is discovered that the Ishgardian Archbishop, Thordan, is in an alliance with the Ascians but that he plans to betray them after they serve their usefulness. Back in U'dah, it is found out that the Sultana lives and was under a sleeping drug, instead of lethal poison, and she is woken up. Important characters are introduced in the story such as the Azure Dragoon Estinien and Lady Iceheart (also known as Ysayle)."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Estinien, Ysayle, Alphinaud, and the Warrior of Light adventure together to try to end the war between Ishgard and the dragons, led by the great wrym Nidhogg. Through discussion with another great wrym by the name of Hraesvelgr, the team finds out that the war is one of vengeance for when Thordan's ancestor broke the peace treaty between dragons and man. The Warrior of Light and Estinien then defeat Nidhogg and share what they've learned about the Dragonsong War with Ishgard. Despite the newfound knowledge, Thordan wants to remain at war with the dragons, so the Warrior of Light defeats him as well."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   With Thordan gone, Aymeric becomes the new leader of Ishgard, but peace does not yet settle as Estinien gets possessed by Nidhogg and the Dragonsong War continues. The Scions finally regroup, but Minfilia is no longer with them and has become one with Hydaelyn. Her spirit explains to the Warrior of Light that the Ascians are working for a dark deity named Zodiark that seeks to battle and defeat Hydaelyn."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   In a final battle against Nidhogg, the Warrior of Light frees Estinien from possession. Alphinaud's twin sister Alisaie joins the Scions, and Paplymo passes away in a battle at Baelsar's Wall in order to cast a spell to imprison a powerful primal called Shinryu. His death makes Yda reveal that she has actually been someone else this whole time: Yda's sister, Lyse. The real Yda died a long time ago, and now Lyse wants to fight for the independence of her home, Ala Mhigo, which is under Garlean rule."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

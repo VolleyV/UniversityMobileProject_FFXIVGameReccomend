@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.EndwalkerPage"
+             Title="Endwalker">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout>
+                    <Image Source="EndwalkerWallpaper.jpg"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Button Text="Watch Trailer" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="180" x:Name="trailerBtn"></Button>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Label Text="Endwalker" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   Endwalker opens as the Warrior of Light and Scions sail to Old Sharlayan. En route, the Warrior speaks with a woman, revealed to be Hydaelyn, who tries to assure them Her sincerity despite having concealed Her primal nature. The Scions split up. One group examines Sharlayan's history and environs, and Hydaelyn possesses Krile, gifting the Warrior a flower that glows near strong emotion. The Scions learn the Forum, Sharlayan's government, has made special effort to study the aetherial sea and accelerated their efforts to gather specimens and knowledge. The Forum catches the Scions, and orders them to stop or be banished."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The other group travels to Thavnair, seeking its alchemists, who are developing an anti-tempering ward. They learn that the dragon Vrtra has ruled Thavnair for millennia, hiding behind a figurehead satrap. While testing a ward made from Vrtra's scales, the alchemist Nidhana is captured, where Fandaniel reveals his former identity: the Allagan technologist Amon who placed a clone of himself inside the Crystal Tower after his recruitment by Emet-Selch. Protected by the warding scales, the Scions rescue Nidhana and destroy the Tower; they find a severed arm as its core."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Protected from tempering, the Scions march on the ruins of Garlemald alongside a detachment of the Grand Companies. Belligerent Garlean holdouts rebuff their aid, but eventually accept. The Scions then assault the Tower of Babil and defeat Anima, a primal created from the corpse of Emperor Varis, which had tempered Garlemald. Despite Anima's destruction, it serves its purpose, gathering enough aether to destroy most of Zodiark's prison but forcing Fandaniel and Zenos to travel to the moon to finish the job. Hydaelyn-Krile arrives, telling the Warrior to pursue, but they are too late: Zodiark is freed. Fandaniel betrays Zenos, merging with Zodiark to fight the Warrior. Although he is defeated, Fandaniel kills himself and Zodiark as planned, restarting the Final Days. Zenos departs, unwilling to duel the Warrior while they are distracted by the oncoming apocalypse."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Some Scions join the Warrior, and a Hydaelyn-made servant called the Watcher explains the moon doubles as an evacuation vessel if the Final Days return. He calls the Warrior's flower an &quot;elpis&quot;, bidding them to remember this. They learn Hydaelyn created the rabbit-like Loporrits to prepare the moon for evacuating &quot;Etheirys&quot;, the star's Ancient name, but the Loporrits are woefully ignorant of modern Etheirys, derailing their preparations. They say the other shards' residents cannot be saved, and will die when the Source is destroyed. The heroes eventually persuade the Loporrits to consider other options."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Monsters resembling the first Final Days' horrors assault Thavnair, and the Scions fight back. They learn these &quot;Blasphemies&quot; manifest from someone consumed by despair, which erases their souls. The satrap is slain in the chaos, forcing Vrtra to reveal himself. Meanwhile, the Forum officially announces the evacuation of the star and encourages mankind to prepare."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The Warrior goes to the First to consult the lingering essence of Elidibus about the Final Days. He names &quot;Elpis&quot; a place, where new life concepts were safety tested. He recalls seeing the Warrior in Elpis before the sundering, and thus consumes the last of his soul-energy to send the Warrior back in time to seek Hermes, Fandaniel's identity before he took the seat. There, the Warrior meets Emet-Selch, Hythlodaeus, and Venat, the previous Azem. Though mistaken for a familiar at first, they are eventually forced to explain their mission; the Ancients, disturbed by the Warrior's tale, agree to help."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   They seek out Hermes and his empathic creation, Meteion, linked to a collective of identical Meteia sent to distant stars via dynamis, an energy linked to emotions, to ask other beings what gives life meaning. But the Meteia find every such world dead or dying upon arrival, and conclude that life is suffering and should end. Meteion departs to join her sisters at the universe's edge, where they will trigger the Final Days. Bitter over his colleagues' casual anthropocentrism and wanting to test mankind's worthiness, Hermes enables Meteion's escape. He tries to erase everyone's memories, but the Warrior and Venat escape. Hermes, Emet-Selch, and Hythlodaeus forget all recent events, while the Warrior returns home, and Venat prepares, eventually sundering the world as Hydaelyn."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Returning to Sharlayan, Alphinaud secures the Forum's cooperation, and Fourchenault reconciles with his children. He leads the Scions to the Aitiascope, where they can physically enter the aetherial sea. After facing a shade of Amon and defeating him, the group reaches Hydaelyn. She greets them, revealing Her ages-long plan to stop the Final Days, but the Scions must prove they can defeat Her. The Scions emerge victorious, and Hydaelyn gifts the Warrior some of Her power and a crystal pointing to the Meteia's nest. Further, She reveals that the Mothercrystal is not Her, but a separate, vast repository of aether. Her purpose finally fulfilled, Hydaelyn fades from existence."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The Scions board the Forum's evacuation vessel, dubbed the Ragnarok. With the help of un-tempered Tribes and the Loporrits who cooperate to summon uncorrupted Primals to fuel the Ragnarok, the Scions reach the edge of the universe: Ultima Thule. Meteion intercepts them, nearly killing all aboard, before Thancred sacrifices himself, in the process making Ultima Thule survivable. There they find spectres of dead worlds visited by Meteion. One by one they sacrifice themselves so the others can proceed, until only the Warrior remains. Confronting Meteion, the Warrior uses Azem's crystal, empowered by Hydaelyn's Light, to revive Emet-Selch and Hythlodaeus, who create a field of elpis, radiating hope. This anchors Ultima Thule and allows the Scions to be resurrected, restoring Meteion's original personality in the process. She begs them to stop her sisters. Emet-Selch and Hythlodaeus then willingly die; Emet-Selch assures the Warrior that many further adventures await them."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The Scions pursue Meteion through apocalyptic memories. The Meteia merge into the Endsinger, overpowering them. The Warrior teleports their comrades to safety and defeats her, with Zenos' unexpected aid as Shinryu. Meteion views the Warrior's memories, realizing Hermes' question has no single answer, and departs peacefully. Zenos confronts the Warrior, claiming their conflict is what gives his life meaning, and insinuating that the Warrior feels the same. The two fight, and The Warrior barely defeats Zenos, who breathes his last. The Warrior nearly dies, but is miraculously teleported away and narrowly revived while returning home. Having averted the Final Days and brought peace to the star, the Scions formally disband, but secretly remain connected should the need arise."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

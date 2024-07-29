@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.ShadowbringerPage"
+             Title="Shadowbringer">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout>
+                    <Image Source="ShadowbringerWallpaper.jpg"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Button Text="Watch Trailer" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="180" x:Name="trailerBtn"></Button>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Label Text="Shadowbringer" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   At the Crystal Tower, the Warrior of Light is taken to another world called the First. It is a world where light has flooded the world, and where all the comatose Scions have been summoned for help. The Warrior of Light meets important characters, Ardbert and the Crystal Exarch. Ardbert is the First's own Warrior of Light, but he failed to keep it safe and no longer is alive, wandering the world as a ghost. The Crystal Exarch is the one who summoned the Scions, and his identity is a mystery - though he has powerful magic connected to the Crystal Tower."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The Warrior of Light reunites with their companions at various locations while defeating creatures called sin-eaters and powerful ones called Lightwardens. With each Lightwarden defeat, the Warrior of Light returns darkness to the world and intakes the Lightwarden's light upon themselves. Upon reuniting with Thancred, there is also another Minifilia in this world that joins the Scions. She was held prisoner in the city of Eulmore until Thancred broke her out. As the team goes around killing Lightwardens, the new Minifilia gets her own name, Ryne. Another companion is Solus zos Galvus (aka Emet-Selch), who introduces himself to the Scions and offers to help them so that they can get a mutual understanding."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   After killing many Lightwardens, the Warrior of Light is overloaded with so much light that they begin to turn into a Lightwarden themselves. This is when the Crystal Exarch finally reveals his true identity: G'raha Tia, an old companion of the Warrior of Light from the Crystal Tower sidequests at the end of A Realm Reborn. His plan was to take in all the light and then end his life to save the Warrior of Light, but he is stopped and kidnapped by Emet-Selch who decides to end their truce for mutual understanding."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Ryne's power holds back the Warrior of Light from turning into a Lightwarden, and they both go to defeat Emet-Selch as well as save G'raha Tia. They learn that G'raha woke up in the future after sleeping in the Crystal Tower to find that the Garlean's chemical weapon, Black Rose, killed the Scions. So he went to the First and summoned them there not just to save that world, but to try to prevent that dismal future from happening. G'raha is ultimately saved by the Scions and Emet-Selch is defeated. However, he imparts a lot of knowledge to the Scions before he passes."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The Scions learn that the Ascians are an ancient race that ultimately died off and shattered into the worlds known today. Everyone in these words is a fragment of an Ascian, and the surviving Ascians summoned Zodiark to try to save their own world. This is why they seek to destroy other worlds, as it enables them to restore the original world. Upon learning this, it is revealed that Ardbert is a part of the Warrior of Light and merges into their body."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   Meanwhile, in Eorzea, Zenos' surviving spirit takes back his body from Elidibus and kills his dad so that he can have a rematch with the Warrior of Light. Elidibus, finding out Emet-Selch is dead, tries to fight against the Scions on the First and loses. Through magical efforts, the Scions all return to their world and manage to take G'raha Tia back with them."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   It is then revealed that there is a rogue Ascian named Fandaniel who joins up with Zenos and is placing towers around Eorzea that temper people into fighting each other and is draining the lands of their aether. In the face of this new threat, the city-states form alliances of peace with their Beast Tribes, and Estinien officially joins the Scions. Eorzea's leaders and Scions ask for Sharlayan's aid but they refuse. Fandaniel and Zenos make their final preparations for the upcoming final battle, which will be seen in Endwalker."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

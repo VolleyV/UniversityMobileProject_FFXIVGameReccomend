@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.FlayoutPage"
+             Title="Home">
+    <ContentPage.Content>
+        <Grid Padding="0" BackgroundColor="Gainsboro">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Padding="20"
+                BackgroundColor="#AAAAAA">
+                <Image
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Source="FFXIVBig"
+                    />
+            </StackLayout>
+            <StackLayout
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Padding="10"
+                BackgroundColor="#3A3A3A ">
+
+                <Button
+                    BackgroundColor="Transparent"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    ImageSource="housing.png"
+                    Text="home"
+                    x:Name="homeBtn"/>
+                <Button
+                    x:Name="DLCBtn"
+                    BackgroundColor="Transparent"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    ImageSource="achievements.png"
+                    Text="Expansion" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    ImageSource="character.png"
+                    Text="Classes"
+                    x:Name="jobsBtn"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

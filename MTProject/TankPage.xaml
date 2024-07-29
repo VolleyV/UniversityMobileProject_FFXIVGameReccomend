@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.TankPage"
+             Title="Tank"
+             IconImageSource="TankRole">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout Padding="10">
+                    <Image Source="PLD.jpg"/>
+                    <Label Text="Paladin" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   For centuries, the elite of the Sultansworn have served as personal bodyguards to the royal family of Ul'dah. Known as paladins, these men and women marry exquisite swordplay with stalwart shieldwork to create a style of combat uncompromising in its defense. Clad in brilliant silver armor, they charge fearlessly into battle, ever ready to lay down their lives for their liege. To be a paladin is to protect, and those who choose to walk this path will become the iron foundation upon which the party's defense is built."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="WAR.jpg"/>
+                    <Label Text="Warrior" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   On the northernmost edge of Abalathia's Spine exists a mountain tribe renowned for producing fearsome mercenaries. Wielding greataxes and known as warriors, these men and women learn to harness their inner-beasts and translate that power to unbridled savagery on the battlefield. In former times which saw war waged ceaselessly in Eorzea, the warriors featured prominently on the front lines of battle. With the arrival of peacetime, however, their art has descended into the shadows of obscurity, where it remains to this day." Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="DRK.jpg"/>
+                    <Label Text="Dark Knight" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   The pious Ishgardian clergy guide the flock, and the devout knights protect the weak. Yet even the holiest of men succumb to the darkest of temptations." Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   None dare to administer justice to these sacrosanct elite residing outside the reach of the law. Who, then, defends the feeble from the transgressions of those meant to guide and protect them?" Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   A valiant few take up arms to defend the downtrodden, and not even the holy priests and knights can escape their judgment. Pariahs in their own land, they are known by many as “dark knights.”" Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   These sentinels bear no shields declaring their allegiance. Instead, their greatswords act as beacons to guide the meek through darkness." Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="GNB.jpg"/>
+                    <Label Text="Gunbreaker" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   The Hrothgar of northern Ilsabard have passed the art of the gunblade from one generation to the next. The weapon itself combines a sword with a firing mechanism, emitting a range of magical effects by utilizing aetherially imbued cartridges. Originally employed by Queen Gunnhildr's personal guard, they were once known as Gunnhildr's Blades and differ greatly from the similarly named weapons used in the Garlean Empire." Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MTProject.ARRPage"
+             Title="A Realm Reborn">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="bodyStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="headerStyle" TargetType="Label">
+                <Setter Property="LineHeight" Value="1.2"></Setter>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#0A0A0A" Padding="20">
+                <StackLayout>
+                    <Image Source="ArrWallpaper.jpg"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Button Text="Watch Trailer" BackgroundColor="#F5CC00" CornerRadius="8" HorizontalOptions="CenterAndExpand"
+                            FontSize="20" FontAttributes="Bold" WidthRequest="180" x:Name="trailerBtn"></Button>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Label Text="A Realm Reborn" Style="{StaticResource headerStyle}"></Label>
+                    <Label Text="   The story picked up later in A Realm Reborn, with the player either being new or the one Louisoix teleported during Bahamut's rampage. It has been five years since Bahamut's attack, and even if the player is not new, NPCs do not remember them, as their identities were wiped from their memories. As the player character takes on odd jobs and adventures, they get looped into the Scions of the Seventh Dawn which are now led by grown-up Minfilia since Louisoix sacrificed himself to protect others from Bahamut."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The player character gets visions of a giant crystal and the Scions explain that they have been blessed with the Echo, a power given to those chosen by Hydalyn, a sentient crystal that oversees life and the elements of the world. Among the Scions are other members with the Echo, and players' particular Echo ability is to see into people's memories. Since the Echo prevents the brainwashing of primals, the player character quickly becomes a hero for dealing with primal summons done by the various Beast Tribes of Eorzea. It is soon unveiled, though, that the Beast Tribes are only being manipulated by something greater, some mysterious people in dark cloaks called Ascians."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   It becomes known that Ascians are not only manipulating the Beast Tribes, but also the Garlean Empire, which still seeks to invade Eorzea. The Empire sees the Scions of the Seventh Dawn as a threat and breaks into their headquarters in the Waking Sands, killing all who are there except Minfilia, who is kidnapped. The player character and Louisoix's grandson, Alphinaud, get the help of Cid to push back against the Ascians by defeating another primal, Garuda. However, the Garlean Empire is far ahead in their own plans, as a warrior named Legatus Gaius van Baelsar leads a project on creating a war machine called the Ultima Weapon, which eats primals for power and is being made for the purpose of taking over Eorzea."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   The protagonist, gaining the name Warrior of Light from their amazing deeds, regroups with the surviving members of the Scions and rescues Minfilia. The victory is short-lived though, as Thancred who went off to investigate the Ascians on his own got possessed by one by the name of Lahabrea. The Warrior of Light, Scions, and the Eorzean Alliance work together and they successfully bring down the Ultima Weapon and save Thancred from the Ascian. The Scions then create a new headquarters at Revenant's Toll and start helping out refugees from Doma who have been victimized by the Garlean Empire."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   A Scion named Moenbryda visits from Sharlayan, and she finds a way to permanently kill Ascians but does so at the sacrifice of her own life. Around this time, the Warrior of Light also loses their connection to Hydaelyn, because they meet with an ancient dragon king named Midgardsormr who wishes to test their worth. The city-state of Ishgard is facing an all-out war with dragons, and makes an alliance with the Scions to help them."  Style="{StaticResource bodyStyle}"></Label>
+                    <Label Text="   While all this occurs, Alphinaud decides to create a group called the Crystal Braves to make a unified Grand Company for all of Eorzea. The Scions are all invited to a banquet in U'dah by Sultana Nanamo. However, Nanamo collapses from poisoned wine at the party and the Scions are blamed for it. The Crystal Braves also betray the Scions and accept the payment of Lolorito to arrest them. Only Alphinaud and the Warrior of Light escape and find asylum with Tataru in Ishgard."  Style="{StaticResource bodyStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
